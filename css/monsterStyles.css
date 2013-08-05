@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container { max-width: 960px; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+
+/* == ACCORDIAN NAV ==== */
+.accordion { width: 33%; float: left; background: #d4d4d4;  }
+.accordion dt, .accordion dd { padding: 10px; border: 1px solid black; border-bottom: 0; }
+dd:last-of-type { border-bottom: 1px solid black; }
+a { display: block; color: black; font-weight: bold; }
+
+
+.operatingTable{ width: 66%; float: left; background: #eee; }
+
+.mBlank { height: 100px; width: 100%; background: #7adadb; border: 1px solid magenta; }
+
+/* == CHOICES ==== */
+/* = MONSTER HEADS = */
+.m1-head { height: 100px; width: 100px; border-radius: 50%; background: #2e87be; }
+.m2-head { height: 100px; width: 100px; border-radius: 50%; background: #dbb5b2; }
+.m3-head { height: 100px; width: 100px; border-radius: 50%; background: #d28b01; }
+.m4-head { height: 100px; width: 100px; border-radius: 50%; background: #67a40f; }
+.m5-head { height: 100px; width: 100px; border-radius: 50%; background: #795cd6; }
+.m6-head { height: 100px; width: 100px; border-radius: 50%; background: #921423; }
+
+/* = MONSTER BODIES = */
+.m1-body{ height: 100px; width: 100px; border-radius: 10%; background: #2e87be; }
+.m2-body{ height: 100px; width: 100px; border-radius: 10%; background: #dbb5b2; }
+.m3-body{ height: 100px; width: 100px; border-radius: 10%; background: #d28b01; }
+.m4-body{ height: 100px; width: 100px; border-radius: 10%; background: #67a40f; }
+.m5-body{ height: 100px; width: 100px; border-radius: 10%; background: #795cd6; }
+.m6-body{ height: 100px; width: 100px; border-radius: 10%; background: #921423; }
+
+
+/* = MONSTER FOODS = */
+.m1-food{ height: 100px; width: 100px; background: #2e87be; }
+.m2-food{ height: 100px; width: 100px; background: #dbb5b2; }
+.m3-food{ height: 100px; width: 100px; background: #d28b01; }
+.m4-food{ height: 100px; width: 100px; background: #67a40f; }
+.m5-food{ height: 100px; width: 100px; background: #795cd6; }
+.m6-food{ height: 100px; width: 100px; background: #921423; }
+
+
+
+
+
