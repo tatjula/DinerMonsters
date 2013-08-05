@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
@@ -24,3 +25,9 @@ The Cloud9 IDE team
 
 Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
 To watch some training videos, visit http://www.youtube.com/user/c9ide
+=======
+DinerMonsters
+=============
+
+DinerMonstersGame
+>>>>>>> 05431d6ee6f8b1c4f58f51d3d3caf7f66fb670a7
