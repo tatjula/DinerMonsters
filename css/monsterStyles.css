@@ -4,7 +4,7 @@
 .container { max-width: 960px; margin: 0 auto; }
 .alignleft { float: left; }
 .alignright { float: right; }
-.col-half { width: 44%; margin: 2%; float: left; background: #4e4e4e;}
+.col-half { width: 46%; margin: 2%; float: left; background: #4e4e4e;}
 .col-1thrids { width: 33%; float: left; }
 .col-2thrids { width: 66%;  float: left; }
 .col-1quarters { width: 25%; float: left; }
@@ -12,31 +12,26 @@
 
 /* == ACCORDIAN NAV ==== */ 
 .accordion dt, .accordion dd { width: 96%; padding: 2%; }
+.accordion dt { border-top: 1px solid #fbfbeb; border-right: 1px solid #808284; border-bottom:  1px solid #808284; border-left: #fbfbeb;  background: #bdbcaf; }
 .accordion a { text-align: center; text-decoration: none; display: block; }
-.accordion dd { overflow: hidden; }
+.accordion dd { overflow: hidden; background: #fbfbeb; }
 
-.operatingTable{ width: 66%; float: left; background: #eee; }
+/* === OPERATING TABLE == */
+.operatingTable{ background: #eee; }
 
-.mBlank { height: 100px; width: 100%; background: #7adadb; border: 1px solid magenta; }
+.mBlank { height: 205px; width: 390px; margin: 0 auto; border: 1px solid magenta; display: block; }
 
 /* == CHOICES ==== */
 /* = MONSTER HEADS = */
-.m1-head { height: 100px; width: 100px; border-radius: 50%; background: #2e87be; }
+.m1-head { height: 100px; width: 100px; background: url(../images/m1-head.png) top center no-repeat; }
 .m2-head { height: 100px; width: 100px; border-radius: 50%; background: #dbb5b2; }
 .m3-head { height: 100px; width: 100px; border-radius: 50%; background: #d28b01; }
 .m4-head { height: 100px; width: 100px; border-radius: 50%; background: #67a40f; }
 .m5-head { height: 100px; width: 100px; border-radius: 50%; background: #795cd6; }
 .m6-head { height: 100px; width: 100px; border-radius: 50%; background: #921423; }
 
-.m1-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #2e87be; }
-.m2-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #dbb5b2; }
-.m3-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #d28b01; }
-.m4-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #67a40f; }
-.m5-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #795cd6; }
-.m6-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #921423; }
-
 /* = MONSTER BODIES = */
-.m1-body{ height: 100px; width: 100px; border-radius: 10%; background: #2e87be; }
+.m1-body{ height: 100px; width: 100px; background: url(../images/m1-body.png) top center no-repeat; }
 .m2-body{ height: 100px; width: 100px; border-radius: 10%; background: #dbb5b2; }
 .m3-body{ height: 100px; width: 100px; border-radius: 10%; background: #d28b01; }
 .m4-body{ height: 100px; width: 100px; border-radius: 10%; background: #67a40f; }
