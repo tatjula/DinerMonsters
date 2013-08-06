@@ -4,13 +4,16 @@
 .container { max-width: 960px; margin: 0 auto; }
 .alignleft { float: left; }
 .alignright { float: right; }
+.col-half { width: 44%; margin: 2%; float: left; background: #4e4e4e;}
+.col-1thrids { width: 33%; float: left; }
+.col-2thrids { width: 66%;  float: left; }
+.col-1quarters { width: 25%; float: left; }
+.col-3quarters { width: 75%; float: left; }
 
-/* == ACCORDIAN NAV ==== */
-.accordion { width: 33%; float: left; background: #d4d4d4;  }
-.accordion dt, .accordion dd { padding: 10px; border: 1px solid black; border-bottom: 0; }
-dd:last-of-type { border-bottom: 1px solid black; }
-a { display: block; color: black; font-weight: bold; }
-
+/* == ACCORDIAN NAV ==== */ 
+.accordion dt, .accordion dd { width: 96%; padding: 2%; }
+.accordion a { text-align: center; text-decoration: none; display: block; }
+.accordion dd { overflow: hidden; }
 
 .operatingTable{ width: 66%; float: left; background: #eee; }
 
@@ -24,6 +27,13 @@ a { display: block; color: black; font-weight: bold; }
 .m4-head { height: 100px; width: 100px; border-radius: 50%; background: #67a40f; }
 .m5-head { height: 100px; width: 100px; border-radius: 50%; background: #795cd6; }
 .m6-head { height: 100px; width: 100px; border-radius: 50%; background: #921423; }
+
+.m1-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #2e87be; }
+.m2-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #dbb5b2; }
+.m3-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #d28b01; }
+.m4-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #67a40f; }
+.m5-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #795cd6; }
+.m6-head-lg { height: 200px; width: 400px; border-radius: 50%; background: #921423; }
 
 /* = MONSTER BODIES = */
 .m1-body{ height: 100px; width: 100px; border-radius: 10%; background: #2e87be; }

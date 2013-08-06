@@ -1,6 +1,5 @@
 // JavaScript Document
 
-// BEGIN MONSTER SWITCHING
 
 $(document).ready(function(){
     
@@ -18,7 +17,9 @@ $(document).ready(function(){
       }
       
     return false;
-  });    
+  }); 
+  
+// BEGIN MONSTER SWITCHING
 
     /*$(".mBlank").click(function() {
 		$(this).addClass("m1-head");
