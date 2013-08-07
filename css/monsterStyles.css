@@ -18,9 +18,13 @@
 .accordion dd { margin-left: 0; border-left: 1px solid #bdbcaf; border-right: 1px solid #bdbcaf; overflow: hidden; background: #fbfbeb; }
 
 /* === OPERATING TABLE == */
-.operatingTable{ background:; position: relative; z-index: 1;}
+.operatingTable{ position: relative; z-index: 1;}
 
 .mBlank { height: 205px; width: 390px; margin: 0 auto; border: 1px solid magenta; display: block; }
+
+#mHead { height: 205px; width: 100%; display: block; background: #bbb; }
+#mBody { height: 205px; width: 100%; display: block; background: #ccc; }
+#mFood { height: 205px; width: 100%; display: block; background: #aaa; }
 
 /* == CHOICES ==== */
 /* = MONSTER HEADS = */

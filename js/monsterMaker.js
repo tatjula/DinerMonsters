@@ -56,13 +56,33 @@ $(document).ready(function(){
         revert: 'invalid',
         appendTo: 'body'
     });
-    $("#mHead").droppable({
+    /*$("#mHead").droppable({
      drop: function(event, ui) {
                // do something with the dock
+               var className = $(this).data("class");
+               $(ui.droppable).addClass(className);
+                 // do something with the draggable item
                $(this).removeClass('mBlank m1-head m2-head m3-head m4-head m5-head m6-head');
-               // do something with the draggable item
-               $(ui.draggable).addClass(className);
+
+           }*/
+    $("#mHead").droppable({
+        drop: function(event, ui) {
+            //reuse jQuery object
+            var $this = $(this);
+            //get object type
+            var droppedObject = ui.draggable.data('class');
+            //css reset
+            $this.attr('class', '');
+            $this.addClass(droppedObject);
+            // do something with the draggable item
+            /*$(ui.draggable).removeClass('mBlank m1-head m2-head m3-head m4-head m5-head m6-head');*/
            }
+           
     });
+    
+    /*  THIS SHOULD HELP WITH CHANING THE HEIGHT OF THE IMAGE WHEN DROPPED
+    var h = $(this).height();
+    $(ui.draggable).height(h);*/
+    
     }
 });
