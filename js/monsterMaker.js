@@ -21,63 +21,62 @@ $(document).ready(function(){
   
 // BEGIN MONSTER SWITCHING
 
-    /*$(".mBlank").click(function() {
-		$(this).addClass("m1-head");
-	});
-
-	$('.m-head').on('click', function(){
-		var className = $(this).data('class');
-		$('#mHead').removeClass('mBlank m1-head m2-head m3-head m4-head m5-head m6-head');
-		$('#mHead').addClass(className);
-	});
-	$('.m-body').on('click', function(){
-		$('#mBody').removeClass('mBlank m1-body m2-body m3-body m4-body m5-body m6-body');
-		var className = $(this).data('class');
-		$('#mBody').addClass(className);
-	});
-	$('.m-food').on('click', function(){
-		$('#mFood').removeClass('mBlank m1-food m2-food m3-food m4-food m5-food m6-food');
-		var className = $(this).data('class');
-		$('#mFood').addClass(className);
-	});	*/
-    
-/*    $( init );
- 
-    function init() {
-      $('.m-head').draggable( {
-        cursor: 'move',
-        snap: '#mHead'
-      } ); */
     $( init );
  
-    function init() {
-      $('.m-head').draggable({
-        helper: 'clone',
-        revert: 'invalid',
-        appendTo: 'body'
-    });
-    /*$("#mHead").droppable({
-     drop: function(event, ui) {
-               // do something with the dock
-               var className = $(this).data("class");
-               $(ui.droppable).addClass(className);
-                 // do something with the draggable item
-               $(this).removeClass('mBlank m1-head m2-head m3-head m4-head m5-head m6-head');
-
-           }*/
-    $("#mHead").droppable({
-        drop: function(event, ui) {
-            //reuse jQuery object
-            var $this = $(this);
-            //get object type
-            var droppedObject = ui.draggable.data('class');
-            //css reset
-            $this.attr('class', '');
-            $this.addClass(droppedObject);
-            // do something with the draggable item
-            /*$(ui.draggable).removeClass('mBlank m1-head m2-head m3-head m4-head m5-head m6-head');*/
-           }
-           
+        function init() {
+        $('.m-head').draggable({
+            helper: 'clone',
+            revert: 'invalid',
+            appendTo: 'body'
+        });
+        $('.m-body').draggable({
+            helper: 'clone',
+            revert: 'invalid',
+            appendTo: 'body'
+        });
+        $('.m-food').draggable({
+            helper: 'clone',
+            revert: 'invalid',
+            appendTo: 'body'
+        });
+    
+        $("#mHead").droppable({
+            drop: function(event, ui) {
+                //reuse jQuery object
+                var $this = $(this);
+                //get object type
+                var droppedObject = ui.draggable.data('class');
+                //css reset
+                $this.attr('class', '');
+                $this.addClass(droppedObject);
+               },
+              accept: ".m-head"
+        });
+        
+        $("#mBody").droppable({
+            drop: function(event, ui) {
+                //reuse jQuery object
+                var $this = $(this);
+                //get object type
+                var droppedObject = ui.draggable.data('class');
+                //css reset
+                $this.attr('class', '');
+                $this.addClass(droppedObject);
+               },
+              accept: ".m-body"           
+        });
+        
+        $("#mFood").droppable({
+            drop: function(event, ui) {
+                //reuse jQuery object
+                var $this = $(this);
+                //get object type
+                var droppedObject = ui.draggable.data('class');
+                //css reset
+                $this.attr('class', '');
+                $this.addClass(droppedObject);
+               },
+              accept: ".m-food"           
     });
     
     /*  THIS SHOULD HELP WITH CHANING THE HEIGHT OF THE IMAGE WHEN DROPPED
