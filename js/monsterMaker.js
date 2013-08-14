@@ -19,6 +19,23 @@ $(document).ready(function(){
     return false;
   }); 
   
+// BEGIN URL SHARING 
+ 
+   $.urlParam = function(name){
+        var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results==null){
+           return null;
+        }
+        else{
+           return results[1] || 0;
+        }
+    }
+
+$.urlParam("#mHead");
+$.urlParam("#mBody");
+$.urlParam("#mFood");
+
+  
 // BEGIN MONSTER SWITCHING
 
     $( init );
@@ -77,11 +94,8 @@ $(document).ready(function(){
                 $this.addClass(droppedObject);
                },
               accept: ".m-food"           
-    });
-    
-    /*  THIS SHOULD HELP WITH CHANING THE HEIGHT OF THE IMAGE WHEN DROPPED
-    var h = $(this).height();
-    $(ui.draggable).height(h);*/
+         });
     
     }
+    
 });
